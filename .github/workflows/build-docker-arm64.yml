@@ -11,6 +11,10 @@ on:
       - main
   workflow_dispatch:
 
+permissions:
+  contents: write      # 允许写入仓库内容（创建/编辑 Release）
+  packages: write      # 允许推送到容器仓库
+  
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
@@ -19,7 +23,7 @@ jobs:
   build-arm64:
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
       packages: write
 
     steps:
