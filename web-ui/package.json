@@ -1,0 +1,1 @@
+{ "name": "claude-code-web-ui", "version": "1.0.0", "main": "app.js", "scripts": { "start": "node app.js" }, "dependencies": {}, "devDependencies": {}, "keywords": [], "author": "hy3188", "license": "ISC" }
